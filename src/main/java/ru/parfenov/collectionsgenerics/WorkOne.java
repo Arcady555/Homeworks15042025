@@ -46,7 +46,7 @@ class Pair implements Comparable<Pair> {
     public int compareTo(Pair o) {
         int result = this.number - o.number;
         if (result == 0) {
-            result = (int) (this.serial - o.serial) * -1;
+            result = (int) (o.serial - this.serial );
         }
         return result;
     }
